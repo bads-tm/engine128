@@ -1,0 +1,50 @@
+name: engine128
+description: a seta engine like alternative/sucessor
+author: bads.tm
+
+#### Under the Hood Stuff #####
+
+# Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
+# If you use maroku (default engine) some of your generated pages may not validate or lint as html5
+# If you don't have it install it via gem install rdiscount
+markdown: rdiscount
+
+# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
+permalink: pretty
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+
+# bads SEO engine
+permalink: /404.HTML
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
+# ###### bads SEO tags
+title: 
+description: 
+url: https://bads-tm.github.io/engine128 # Can break main site if URL was moved, best to replace for forks and etc
+twitter:
+  username: bads-tm
+  
+#facebook:
+# app_id: 1234
+# publisher: 1234
+# admins: 1234
+
+logo: https://raw.githubusercontent.com/bads-tm/bads-tm.github.io/master/uploads/sys/logo.png
+
+#social:
+#  name: bads.tm
+#  links:
+#    - https://twitter.com/bads_tm
+#    - https://www.facebook.com/bads.tm
+
+webmaster_verifications:
+#  google: 1234
+#  bing: 1234
+#  alexa: 1234
+#  yandex: 1234
+

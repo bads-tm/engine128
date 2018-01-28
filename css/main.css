@@ -1,0 +1,414 @@
+html {
+    color: #313131;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+h1,h2{
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    background: #00b3b3;
+    background: -moz-linear-gradient(left, #00b3b3 0%, #80ffff 100%);
+    background: -webkit-linear-gradient(left, #00b3b3 0%,#80ffff 100%);
+    background: linear-gradient(to right, #00b3b3 0%,#80ffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b3b3', endColorstr='#80ffff',GradientType=1 );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.gradient-background{
+    background: #00b3b3;
+    background: -moz-linear-gradient(left, #00b3b3 0%, #80ffff 100%);
+    background: -webkit-linear-gradient(left, #00b3b3 0%,#80ffff 100%);
+    background: linear-gradient(to right, #00b3b3 0%,#80ffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b3b3', endColorstr='#80ffff',GradientType=1 );
+}
+
+body, p{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:#FFF;
+    overflow-x:hidden;
+}
+p{
+    letter-spacing: 1px;
+}
+a{
+    font-weight: 900;
+    color: #767676;
+}
+nav{
+    width: 325px;
+    position: fixed;
+    top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    z-index: 100;
+}
+nav ul{
+    list-style: none;
+    text-align: left;
+}
+nav .nav-option a{
+    display: block;
+    height: 1.4em;
+    padding: .4em;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color .5s, background-color 1s;
+    text-decoration: none;
+    font-size: 2em;
+}
+.nav-option a:hover{
+    background-color: #FFF;
+    color: #222
+}
+.body{
+    margin-bottom: 12em;
+}
+article {
+    width: 50em;
+    margin: 0 0 0 400px;
+    padding: 1em;
+}
+footer{
+    background: #000;
+    color: #fff;
+    width: 100vw;
+    font-size: .8em;
+    padding: .8em 2em;
+    text-align: center;
+    margin-top: 12em;
+    position: absolute;
+    bottom: 0;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+.cc{
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 1px 1px 1px 2px;
+    font-size: 9px;
+    width: 13px;
+    height: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* s# Browser, show Upgrade Prompt */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* == */
+
+.badssitecore{
+    min-height:100vh;
+    position: relative;
+}
+
+#post-nav{
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 215px;
+    margin: 0 auto 12em auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#post-nav a, .nav-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1.5em;
+    height: 1.3em;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 12px;
+    text-decoration: none;
+}
+.container{
+    margin-bottom: 12em;
+}
+
+.disabled{
+    opacity: .3;
+}
+
+.permalink-wrapper {
+    width: 100%;
+    text-align:right;
+	background: #fff;
+	color: #000;
+	font-family: 'Inconsolata', monospace;
+}
+.permalink{
+    color: #999;
+    text-decoration: none;
+}
+
+#blackbar{
+    background: #000;
+    display:flex;
+    justify-content: space-between;
+    padding:18px 0 0;
+}
+
+#blackbar a{
+    color: #fff;
+    font-size: 2em;
+    display: block;
+    line-height: 0;
+    z-index: 30;
+    width:50px;
+}
+#blackbar-gamelist a{
+    padding:0 15px 19px;
+	font-size: 12px;
+	color: #fff;
+    font-size: 2em;
+    display: block;
+    line-height: 1;
+    z-index: 30;
+    width:50px;
+}
+#blackbar div{
+    position: relative;
+}
+#blackbar label{
+    color: white;
+    font-size: .6em;
+    position:relative;
+    bottom:28px;
+    opacity: 0;
+    transition:bottom .5s, opacity .5s;
+    z-index: 1;
+    pointer-events:none;
+}
+#blackbar a:hover + label{
+    display: unset;
+    bottom: 10px;
+    opacity:1;
+}
+
+#blackbar b{
+	background: #000;
+	color: #fff;
+    bottom: 10px;
+	    right: 50px;
+	font-family: 'Inconsolata', monospace;
+}
+
+.hide-until-mouse{
+    opacity: 0;
+    transition: opacity .5s;
+}
+.nav-option > .hide-until-mouse{
+    opacity: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 900px) {
+    /* Style adjustments for viewports that meet the condition */
+    nav{
+        position:relative;
+        margin:0;
+        top:0;
+        width:100vw;
+    }
+    .badssitecore{
+        width:100vw;
+    }
+    article{
+        width:auto;
+        margin:0;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* bads.tm stripe */
+section.footer {
+    margin-top: 0
+}
+
+section.footer .stripe {
+    background: #000000;
+    padding: 1em 0
+}
+
+section.footer .stripe .logo {
+    width: 7em;
+    margin: 0 auto
+}
+
+section.footer .stripe .logo img {
+    display: block
+}
+
+/* bads.tm copyright text */
+.copyRightbds{
+  font-family: 'Product Sans';  font-size: 14px;
+  color: #FFFFFF;
+  font-style: bold
+}

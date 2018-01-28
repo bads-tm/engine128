@@ -1,0 +1,25 @@
+/* bads.tm stripe */
+section.footer {
+    margin-top: 0
+}
+
+section.footer .stripe {
+    background: #000000;
+    padding: 1em 0
+}
+
+section.footer .stripe .logo {
+    width: 7em;
+    margin: 0 auto
+}
+
+section.footer .stripe .logo img {
+    display: block
+}
+
+/* bads.tm copyright text */
+.copyRightbds{
+  font-family: 'Product Sans';  font-size: 14px;
+  color: #FFFFFF;
+  font-style: bold
+}
