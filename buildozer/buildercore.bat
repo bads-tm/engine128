@@ -14,9 +14,9 @@ REM <-- PROGRAM CODE -->
 cd Projects
 dir /B
 
-Which File?
+echo Which File?
 
-Output Filename
+echo Output Filename
 
 call readBBLD1
 
